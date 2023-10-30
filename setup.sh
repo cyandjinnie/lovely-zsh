@@ -21,7 +21,9 @@ echo "* Fonts"
 echo "- copy fonts to /usr/share/fonts/truetype"
 cp -r ./fira-code /usr/share/fonts/truetype/fira-code
 
-echo "! Now the final touch: go and install Fira Code font in your terminal. And enjoy"
+echo "* Gnome terminal"
+echo "- load profiles"
+dconf load /org/gnome/terminal/legacy/profiles:/ < gnome-terminal-profiles.dconf
 
 
 
